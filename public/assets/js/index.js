@@ -1,5 +1,3 @@
-var getStartedBtn = document.querySelector('#get-started');
-
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -13,11 +11,6 @@ if (window.location.pathname === '/notes') {
   newNoteBtn = document.querySelector('.new-note');
   noteList = document.querySelectorAll('.list-container .list-group');
 }
-
-// event handler for homepage 'Get Started' button
-const handleGetStartedSubmit = event => {
-  event.preventDefault();
-};
 
 // Show an element
 const show = (elem) => {
@@ -185,6 +178,3 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
-
-// event listener for 'Get Started' button
-getStartedBtn.addEventListener('submit', handleGetStartedSubmit)
