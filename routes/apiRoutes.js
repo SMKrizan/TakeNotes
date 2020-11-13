@@ -1,15 +1,13 @@
-// responds to requests 
+// this file responds to front-end requests 
 
-const uniqid = require('uniqid');
-
-
-// middleware added so that app is aware of other routes
+// middleware resources
 const router = require('express').Router();
 const fs = require('fs');
 const path = require('path');
+const uniqid = require('uniqid');
 
 // file imports
-const notes = require('../lib/db.json');
+const notes = require('/lib/db.json');
 // const manager = require('../lib/notesManager.js');
 // const index = require('../public/assets/js/index.js');
 
@@ -25,7 +23,7 @@ router.get('/notes', (req, res) => {
     });
 });
 
-router.post('/api/notes', (req, res) => {
+router.post('/notes', (req, res) => {
     fs.readFile('lib/db.json', function (err, data) {
         if (err) {
             throw err; 
@@ -49,7 +47,7 @@ router.post('/api/notes', (req, res) => {
 
 // note that a 'param' route must come after the other GET route; id spec should return a single object
 // happens when 
-router.delete('/api/notes/:id', (req, res) => {
+router.delete('/notes/:id', (req, res) => {
     const deleteNote = findById(req.params.id, notes);
     if (result) {
         res.json(deleteNote);

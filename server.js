@@ -1,6 +1,8 @@
+//this is the server/nodeHub
+
 // connects to routing hub
-const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes');
+const apiRoutes = require('/routes/apiRoutes.js');
+const htmlRoutes = require('/routes/htmlRoutes.js');
 
 // facilitates GET/POST functionality
 const express = require('express');
