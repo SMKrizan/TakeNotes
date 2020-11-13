@@ -18,6 +18,7 @@ router.get('/notes', (req, res) => {
             throw err; 
         }
         let allNotes = JSON.parse(data);
+        console.log('allNotes1: ', allNotes);
         return res.json(allNotes);
     });
 });
@@ -30,6 +31,7 @@ router.post('/notes', (req, res) => {
             throw err; 
         }
         let allNotes = JSON.parse(data);
+        console.log('allNotes2: ', allNotes);
         let newNote = {
             title: req.body.title,
             text: req.body.text,
@@ -44,8 +46,6 @@ router.post('/notes', (req, res) => {
             }
             res.send('200');
         });
-        console.log('newNote2: ', newNote);
-
     });
 })
 
