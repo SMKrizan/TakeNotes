@@ -1,3 +1,5 @@
+// responds to requests for the entire file
+
 // router
 const router = require('express').Router();
 
