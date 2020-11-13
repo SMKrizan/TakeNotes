@@ -1,19 +1,14 @@
-// router
+// middleware added so that app is aware of other routes
 const router = require('express').Router();
 
-// npm package for generating a unique id
-const uniqid = require('uniqid');
-
 // file imports
-const { notes } = require('../../db/db.json');
+// const notes = require('../lib/db.json');
+const manager = require('../lib/manager.js');
 
 // GET /api/notes should read the db.json file and return all saved notes as JSON.
-
-// the route by which the front-end can request data; two inputs are required: 
 // 1st: short for 'request', this is a string describing the route from which the client will fetch; 
 // 2nd: short for 'response', this is a callback function that will execute every time there's a GET request
-// note: using 'send' method from res parameter to send string/data to client
-router.get('/api/notes', (req, res) => {
+router.get('/notes', (req, res) => {
     let savedNotes = notes;
     res.json(savedNotes);
 });
@@ -32,19 +27,11 @@ router.delete('/notes/:id', (req, res) => {
 // creates a server route that listens for 'post' requests: accepts user input to be stored on the server
 router.post('/notes', (req, res) => {
 
-    var assignId = uniqid.time();
-    console.log("assignId: ", assignId);
-
-
-    // if an object is missing key data or is input incorrectly, send back 404 error
-    if(!validateNotes(req.body)) {
-        // response method relays message to the request-making client
-        res.status(400).send('Your entry is not properly formatted.');
-    } else {
-        // adds note to json file and notes array
-        const note = addNote(req.body, notes);
-        res.json(note);
-    }
+    const note = addNote(req.body, notes);
+    console.log("req.body: ", req.body);
+    console.log("note: ", note);
+    
+    res.json(note);
 });
 
 module.exports = router;
