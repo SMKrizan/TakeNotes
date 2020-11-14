@@ -19,6 +19,7 @@ This app will allow the user to write and save notes to assist with task-trackin
 
 ## <a name="instructions-for-installation">Instructions for Installation</a>:
 1. npm init -y
+1. 
 1. Enter "node server" in the command line to run.
 
     
