@@ -1,4 +1,4 @@
-//this is the server/nodeHub
+//this is the server file
 
 // connects to routing hub
 const apiRoutes = require('./routes/apiRoutes');
