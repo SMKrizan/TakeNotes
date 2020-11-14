@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/SMKrizan/TakeNotes/issues"
   },
-  "homepage": "https://github.com/SMKrizan/TakeNotes#readme",
+  "homepage": "https://github.com/SMKrizan/TakeNotes",
   "dependencies": {
     "express": "^4.17.1",
     "uniqid": "^5.2.0"
