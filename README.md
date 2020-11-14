@@ -1,4 +1,4 @@
-# Note Taker Starter Code
+# Note Taker "readTheory" Starter Code
 
 ## Description
 This app will allow the user to write and save notes to assist with task-tracking and the organizing of one's thoughts.
@@ -8,25 +8,14 @@ This app will allow the user to write and save notes to assist with task-trackin
 - CSS
 - JavaScript
 - Node
-- ES6
-
-## Table of Contents:
-- [Instructions for Installation](#instructions-for-installation)
-- [Usage](#usage)
-- [Contribution Guidelines](#contribution-guidelines)
-- [Questions?](#questions?)
-
-
-## <a name="instructions-for-installation">Instructions for Installation</a>:
-1. npm init -y
-1. 
-1. Enter "node server" in the command line to run.
-
-    
+- ES6    
 
 ## <a name="usage">Usage</a>:
 
-[![Application Screenshot](./assets/GenTeamProfile-screenshot.jpg)*Click the image-link to access a video walkthrough of the application:*](https://drive.google.com/file/d/1qlHMAsmjg06ReGYEeunBg6EfI_EYSDn8/view)
+https://github.com/SMKrizan/readTheory
+
+[![Application Screenshot](./assets/landingpage.jpg)*Screenshot of landing page*]
+[![Application Screenshot](./assets/notes.jpg)*Screenshot of working notes page*]
 
     
 ## <a name="contribution-guidelines">Contribution Guidelines</a>:
@@ -35,8 +24,3 @@ Made with ☕+❤️ by Sara Krizan and in consultation with several LAs, TA, an
 ## <a name="questions?">Questions?</a>
 Sara Krizan
 [GitHub](https://github.com/SMKrizan)
-You are required to submit BOTH of the following for review:
-
-The URL of the functional, deployed application.
-
-The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
