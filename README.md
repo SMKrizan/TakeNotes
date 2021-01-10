@@ -1,4 +1,4 @@
-# Note Taker
+# readTheory: a note-taking application
 
 ## Description
 This app will allow the user to write and save notes to assist with task-tracking and the organizing of one's thoughts.
