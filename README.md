@@ -13,7 +13,7 @@ This app will allow the user to write and save notes to assist with task-trackin
 ## <a name="usage">Usage</a>:
 
 Deployed application:
-https://github.com/SMKrizan/readTheory
+https://readtheory.herokuapp.com/
 
 ![Application Screenshot](./assets/landingpage.jpg)*Screenshot of landing page*
 
